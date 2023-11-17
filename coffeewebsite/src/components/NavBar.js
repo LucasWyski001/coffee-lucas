@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import coffeeImg from "../assets/img/cofeeEx.jpg";
+import coffeeImgDesktop from "../assets/img/coffeeBack.jpeg";
+import coffeeImgMobile from "../assets/img/coffeeBackMobile.jpeg";
 
 const navigation = [
   { name: 'About', href: '#' },
@@ -12,11 +13,24 @@ const navigation = [
 
 export const NavBar = () =>{
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     // h-screen makes the background essentially fill the entire screen
     // eventually will change bg-black to bg-white
-    <div className="bg-white h-screen"> 
+    <div className="bg-cover bg-center h-screen bg-fixed" style={{ backgroundImage: `url(${windowWidth <= 768 ? coffeeImgMobile : coffeeImgDesktop})` }}> 
       <header className="absolute inset-x-0 top-0 z-50">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
@@ -138,5 +152,6 @@ export const NavBar = () =>{
         </div>
       </div>
     </div>
+    
   )
 }
