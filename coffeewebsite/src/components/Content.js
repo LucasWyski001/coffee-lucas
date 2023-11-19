@@ -36,8 +36,7 @@ export const Content =() => {
             <div className="lg:max-w-lg">
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">A Different Coffee</h1>
               <p className="mt-6 text-xl leading-8 text-gray-700">
-                Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam
-                eget aliquam. Quisque id at vitae feugiat egestas.
+                Here at Delucas Coffee we have a different way of making coffee, our homegrown home fire roasted coffee is as organic as it gets!
               </p>
             </div>
           </div>
@@ -53,18 +52,15 @@ export const Content =() => {
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
               <p>
-                Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet
-                vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque
-                erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris
-                semper sed amet vitae sed turpis id.
+                What started as a dream to sell good coffee and just have a good cup of joe became reality.
+                With a little coffee plant and some coffee beans and a will for good coffee, Delucas came to existence.
               </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 <li className="flex gap-x-3">
-                  <CloudArrowUpIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
                   <span>
-                    <strong className="font-semibold text-gray-900">Push to deploy.</strong> Lorem ipsum, dolor sit amet
-                    consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate
-                    blanditiis ratione.
+                  <h3 className="mt-2 text-2xl font-bold tracking-tight text-gray-900 sm:text-1xl">All Organic</h3>
+                  All of our coffee starts from the ground, grown chemical and pesticide free, all the time. In a time where chemicals are highly used for alot,
+                  we wanted to be different and stand out, and be the best we can.
                   </span>
                 </li>
                 <li className="flex gap-x-3">
